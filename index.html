@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>S4vvy | CTF Profile</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -109,100 +110,95 @@
     }
   </style>
 </head>
-<body class="min-h-screen bg-bgDark text-white font-mono bg-gradient-to-br from-bgDark to-[#0a1a0f]">
-
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
-    <div class="flex flex-col items-center mb-16">
-      <div class="relative avatar-container">
-        <img src="https://avatars.githubusercontent.com/u/153960960?v=4&size=256"
-             class="w-36 h-36 rounded-full avatar-glow transform transition hover:rotate-6"/>
+<body>
+  <div id="app" class="min-h-screen bg-bgDark text-white font-mono bg-gradient-to-br from-bgDark to-[#0a1a0f]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <div class="flex flex-col items-center mb-16">
+        <div class="relative avatar-container">
+          <img src="https://avatars.githubusercontent.com/u/153960960?v=4&size=256"
+              class="w-36 h-36 rounded-full avatar-glow transform transition hover:rotate-6"/>
+        </div>
+        <h1 class="text-5xl mt-6 font-bold cyber-text tracking-tighter">S4vvy</h1>
+        <p class="mt-4 text-center max-w-xl text-lg leading-relaxed px-4 py-3 rounded-xl border border-matrix/30 bg-gradient-to-r from-[#0a0f0a] via-[#0f1f14] to-[#0a0f0a] shadow-inner shadow-matrix/10 cyber-border">
+          <span class="cyber-text font-semibold tracking-tight block">
+            Drop some knowledge that'll leave me <span class="text-cyber2">speechless.</span>
+          </span>
+        </p>
       </div>
-      <h1 class="text-5xl mt-6 font-bold cyber-text tracking-tighter">S4vvy</h1>
-      <p class="mt-4 text-center max-w-xl text-lg leading-relaxed px-4 py-3 rounded-xl border border-matrix/30 bg-gradient-to-r from-[#0a0f0a] via-[#0f1f14] to-[#0a0f0a] shadow-inner shadow-matrix/10 cyber-border">
-        <span class="cyber-text font-semibold tracking-tight block">
-          Drop some knowledge that'll leave me <span class="text-cyber2">speechless.</span>
-        </span>
-      </p>
-      
-    </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-
-      <a href="https://app.hackthebox.com/profile/68365" target="_blank"
-         class="card p-6 rounded-xl flex flex-col items-center group relative hover:z-10">
-        <div class="absolute inset-0 bg-[radial-gradient(#00ff5e_1px,transparent_1px)] opacity-0 group-hover:opacity-10"
-             style="background-size: 4px 4px;"></div>
-        <img src="assets/HTB.png" class="w-24 h-24 object-contain transform transition group-hover:scale-110"/>
-        <span class="mt-4 text-matrix font-bold text-lg tracking-wide group-hover:text-cyber1">HackTheBox</span>
-        <div class="absolute inset-0 pointer-events-none border-2 border-matrix/0 group-hover:border-matrix/20 transition"></div>
-      </a>
-
-      <a href="https://www.root-me.org/S4vvy" target="_blank"
-         class="card p-6 rounded-xl flex flex-col items-center group relative hover:z-10">
-        <div class="absolute inset-0 bg-[radial-gradient(#00ff5e_1px,transparent_1px)] opacity-0 group-hover:opacity-10"
-             style="background-size: 4px 4px;"></div>
-        <img src="assets/root-e.png" class="w-24 h-24 object-contain transform transition group-hover:scale-110"/>
-        <span class="mt-4 text-matrix font-bold text-lg tracking-wide group-hover:text-cyber1">Root-Me</span>
-        <div class="absolute inset-0 pointer-events-none border-2 border-matrix/0 group-hover:border-matrix/20 transition"></div>
-      </a>
-
-      <a href="https://ringzer0ctf.com/profile/51567/s4vvy" target="_blank"
-         class="card p-6 rounded-xl flex flex-col items-center group relative hover:z-10">
-        <div class="absolute inset-0 bg-[radial-gradient(#00ff5e_1px,transparent_1px)] opacity-0 group-hover:opacity-10"
-             style="background-size: 4px 4px;"></div>
-        <img src="assets/ringzer0.jpeg" class="w-24 h-24 object-contain transform transition group-hover:scale-110"/>
-        <span class="mt-4 text-matrix font-bold text-lg tracking-wide group-hover:text-cyber1">Ringzer0Ctf</span>
-        <div class="absolute inset-0 pointer-events-none border-2 border-matrix/0 group-hover:border-matrix/20 transition"></div>
-      </a>
-
-      <a href="https://tryhackme.com/p/s4vvy" target="_blank"
-         class="card p-6 rounded-xl flex flex-col items-center group relative hover:z-10">
-        <div class="absolute inset-0 bg-[radial-gradient(#00ff5e_1px,transparent_1px)] opacity-0 group-hover:opacity-10"
-             style="background-size: 4px 4px;"></div>
-        <img src="assets/thm.png" class="w-24 h-24 object-contain transform transition group-hover:scale-110"/>
-        <span class="mt-4 text-matrix font-bold text-lg tracking-wide group-hover:text-cyber1">TryHackme</span>
-        <div class="absolute inset-0 pointer-events-none border-2 border-matrix/0 group-hover:border-matrix/20 transition"></div>
-      </a>
-
-      <a href="https://pwn.college/hacker/s4vvy" target="_blank"
-         class="card p-6 rounded-xl flex flex-col items-center group relative hover:z-10">
-        <div class="absolute inset-0 bg-[radial-gradient(#00ff5e_1px,transparent_1px)] opacity-0 group-hover:opacity-10"
-             style="background-size: 4px 4px;"></div>
-        <img src="assets/pwncollege.png" class="w-24 h-24 object-contain transform transition group-hover:scale-110"/>
-        <span class="mt-4 text-matrix font-bold text-lg tracking-wide group-hover:text-cyber1">pwn.college</span>
-        <div class="absolute inset-0 pointer-events-none border-2 border-matrix/0 group-hover:border-matrix/20 transition"></div>
-      </a>
-
-      <a href="https://x.com/s4vvybyte" target="_blank"
-         class="card p-6 rounded-xl flex flex-col items-center group relative hover:z-10">
-        <div class="absolute inset-0 bg-[radial-gradient(#00ff5e_1px,transparent_1px)] opacity-0 group-hover:opacity-10"
-             style="background-size: 4px 4px;"></div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" class="w-24 h-24 object-contain transform transition group-hover:scale-110"/>
-        <span class="mt-4 text-matrix font-bold text-lg tracking-wide group-hover:text-cyber1">X</span>
-        <div class="absolute inset-0 pointer-events-none border-2 border-matrix/0 group-hover:border-matrix/20 transition"></div>
-      </a>
-
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+        <a v-for="platform in platforms" :href="platform.url" target="_blank"
+           class="card p-6 rounded-xl flex flex-col items-center group relative hover:z-10">
+          <div class="absolute inset-0 bg-[radial-gradient(#00ff5e_1px,transparent_1px)] opacity-0 group-hover:opacity-10"
+              style="background-size: 4px 4px;"></div>
+          <img :src="platform.image" class="w-24 h-24 object-contain transform transition group-hover:scale-110"/>
+          <span class="mt-4 text-matrix font-bold text-lg tracking-wide group-hover:text-cyber1">{{ platform.name }}</span>
+          <div class="absolute inset-0 pointer-events-none border-2 border-matrix/0 group-hover:border-matrix/20 transition"></div>
+        </a>
+      </div>
     </div>
   </div>
 
   <script>
-    document.querySelectorAll('.card').forEach(card => {
-      let rect, x, y;
-      card.addEventListener('mousemove', (e) => {
-        rect = card.getBoundingClientRect();
-        x = (e.clientX - rect.left) / card.offsetWidth - 0.5;
-        y = (e.clientY - rect.top) / card.offsetHeight - 0.5;
-        card.style.transform = `
-          perspective(1000px)
-          rotateX(${y * 8}deg)
-          rotateY(${-x * 8}deg)
-          translateZ(10px)
-        `;
-      });
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = '';
-      });
-    });
+    const { createApp } = Vue;
+
+    createApp({
+      data() {
+        return {
+          platforms: [
+            {
+              name: 'HackTheBox',
+              url: 'https://app.hackthebox.com/profile/68365',
+              image: 'assets/HTB.png'
+            },
+            {
+              name: 'Root-Me',
+              url: 'https://www.root-me.org/S4vvy',
+              image: 'assets/root-e.png'
+            },
+            {
+              name: 'Ringzer0Ctf',
+              url: 'https://ringzer0ctf.com/profile/51567/s4vvy',
+              image: 'assets/ringzer0.jpeg'
+            },
+            {
+              name: 'TryHackme',
+              url: 'https://tryhackme.com/p/s4vvy',
+              image: 'assets/thm.png'
+            },
+            {
+              name: 'pwn.college',
+              url: 'https://pwn.college/hacker/s4vvy',
+              image: 'assets/pwncollege.png'
+            },
+            {
+              name: 'X',
+              url: 'https://x.com/s4vvybyte',
+              image: 'https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png'
+            }
+          ]
+        }
+      },
+      mounted() {
+        document.querySelectorAll('.card').forEach(card => {
+          let rect, x, y;
+          card.addEventListener('mousemove', (e) => {
+            rect = card.getBoundingClientRect();
+            x = (e.clientX - rect.left) / card.offsetWidth - 0.5;
+            y = (e.clientY - rect.top) / card.offsetHeight - 0.5;
+            card.style.transform = `
+              perspective(1000px)
+              rotateX(${y * 8}deg)
+              rotateY(${-x * 8}deg)
+              translateZ(10px)
+            `;
+          });
+          card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+          });
+        });
+      }
+    }).mount('#app')
   </script>
 </body>
 </html>
