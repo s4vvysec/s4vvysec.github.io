@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>S4vvy | CTF Profile</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -53,8 +54,13 @@
     }
 
     @keyframes border-run {
-      0% { left: -100%; }
-      100% { left: 100%; }
+      0% {
+        left: -100%;
+      }
+
+      100% {
+        left: 100%;
+      }
     }
 
     .card {
@@ -91,7 +97,7 @@
       position: relative;
       display: inline-block;
       border-radius: 9999px;
-      background-color: #111; 
+      background-color: #111;
       padding: 0.25rem;
     }
 
@@ -110,16 +116,18 @@
     }
   </style>
 </head>
+
 <body>
   <div id="app" class="min-h-screen bg-bgDark text-white font-mono bg-gradient-to-br from-bgDark to-[#0a1a0f]">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <div class="flex flex-col items-center mb-16">
         <div class="relative avatar-container">
           <img src="https://avatars.githubusercontent.com/u/153960960?v=4&size=256"
-              class="w-36 h-36 rounded-full avatar-glow transform transition hover:rotate-6"/>
+            class="w-36 h-36 rounded-full avatar-glow transform transition hover:rotate-6" />
         </div>
         <h1 class="text-5xl mt-6 font-bold cyber-text tracking-tighter">S4vvy</h1>
-        <p class="mt-4 text-center max-w-xl text-lg leading-relaxed px-4 py-3 rounded-xl border border-matrix/30 bg-gradient-to-r from-[#0a0f0a] via-[#0f1f14] to-[#0a0f0a] shadow-inner shadow-matrix/10 cyber-border">
+        <p
+          class="mt-4 text-center max-w-xl text-lg leading-relaxed px-4 py-3 rounded-xl border border-matrix/30 bg-gradient-to-r from-[#0a0f0a] via-[#0f1f14] to-[#0a0f0a] shadow-inner shadow-matrix/10 cyber-border">
           <span class="cyber-text font-semibold tracking-tight block">
             Chasing <span class="text-cyber2">ghosts</span> in the machine.
           </span>
@@ -128,12 +136,16 @@
 
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
         <a v-for="platform in platforms" :href="platform.url" target="_blank"
-           class="card p-6 rounded-xl flex flex-col items-center group relative hover:z-10">
-          <div class="absolute inset-0 bg-[radial-gradient(#00ff5e_1px,transparent_1px)] opacity-0 group-hover:opacity-10"
-              style="background-size: 4px 4px;"></div>
-          <img :src="platform.image" class="w-24 h-24 object-contain transform transition group-hover:scale-110"/>
-          <span class="mt-4 text-matrix font-bold text-lg tracking-wide group-hover:text-cyber1">{{ platform.name }}</span>
-          <div class="absolute inset-0 pointer-events-none border-2 border-matrix/0 group-hover:border-matrix/20 transition"></div>
+          class="card p-6 rounded-xl flex flex-col items-center group relative hover:z-10">
+          <div
+            class="absolute inset-0 bg-[radial-gradient(#00ff5e_1px,transparent_1px)] opacity-0 group-hover:opacity-10"
+            style="background-size: 4px 4px;"></div>
+          <img :src="platform.image" class="w-24 h-24 object-contain transform transition group-hover:scale-110" />
+          <span class="mt-4 text-matrix font-bold text-lg tracking-wide group-hover:text-cyber1">{{ platform.name
+            }}</span>
+          <div
+            class="absolute inset-0 pointer-events-none border-2 border-matrix/0 group-hover:border-matrix/20 transition">
+          </div>
         </a>
       </div>
     </div>
@@ -146,6 +158,11 @@
       data() {
         return {
           platforms: [
+            {
+              name: 'pwn.college',
+              url: 'https://pwn.college/hacker/S4vvy',
+              image: 'assets/pwncollege.png'
+            },
             {
               name: 'HackTheBox',
               url: 'https://app.hackthebox.com/profile/68365',
@@ -166,10 +183,11 @@
               url: 'https://tryhackme.com/p/s4vvy',
               image: 'assets/thm.png'
             },
+
             {
-              name: 'pwn.college',
-              url: 'https://pwn.college/hacker/S4vvy',
-              image: 'assets/pwncollege.png'
+              name: 'PicoCTF',
+              url: 'https://play.picoctf.org/users/s4vvy',
+              image: 'assets/picoctf.png'
             },
             {
               name: 'X',
@@ -201,4 +219,5 @@
     }).mount('#app')
   </script>
 </body>
+
 </html>
